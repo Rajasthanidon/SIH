@@ -4,7 +4,7 @@ async function createtable(){
         id SERIAL PRIMARY KEY,
         username TEXT,
         password TEXT,
-        role TEXT)`)
+        role TEXT);`)
         console.log("DATABASE CONNECTED");
 }
 module.exports = createtable;
