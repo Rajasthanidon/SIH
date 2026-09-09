@@ -17,6 +17,7 @@ function IndustrySignup() {
         password: "",
         confirmPassword: "",
         terms: false,
+        role:"industry"
     });
 
     const handleChange = (e) => {

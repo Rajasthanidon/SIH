@@ -17,6 +17,7 @@ function InstitutionSignup() {
         password: "",
         confirmPassword: "",
         terms: false,
+        role:"institute"
     });
 
     const handleChange = (e) => {

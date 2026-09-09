@@ -18,6 +18,7 @@ function StudentSignup() {
         password: "",
         confirmPassword: "",
         terms: false,
+        role: "student"
     });
 
     const handleChange = (e) => {

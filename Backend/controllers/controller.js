@@ -40,7 +40,7 @@ async function login(req,res){
 
 }
 function signup(req,res){
-    const {name,email,number,institute,department,designation,experiance,expertise,password} = req.body
+    const {name,email,number,institute,department,designation,experiance,expertise,password,role} = req.body
     model.getuser(username,(err,row)=>{
         
         if(row){res.json({
@@ -48,7 +48,7 @@ function signup(req,res){
             message:"User already exists"
         })}
         else{
-            model.adduser(name,email,number,institute,department,designation,experiance,expertise,password)
+            model.adduser(name,email,number,institute,department,designation,experiance,expertise,password,role)
         }
     })
 

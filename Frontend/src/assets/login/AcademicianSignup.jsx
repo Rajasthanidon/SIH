@@ -16,6 +16,7 @@ function AcademicianSignup() {
         password: "",
         confirmPassword: "",
         terms: false,
+        role:"faculty"
     });
 
     const handleChange = (e) => {

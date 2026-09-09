@@ -20,9 +20,9 @@ catch(err){
     callback(false,err);
 }
 }
-async function adduser(name,email,number,institute,department,designation,experiance,expertise,password){
+async function adduser(name,email,number,institute,department,designation,experiance,expertise,password,role){
     try{
-        const response = await pool.query(`INSERT INTO users(name,email,number,institute,department,designation,experiance,expertise,password) VALUE($1,$2,$3,$4,$5,$6,$7,$8,$9)`,[name,email,number,institute,department,designation,experiance,expertise,password])
+        const response = await pool.query(`INSERT INTO users(name,email,number,institute,department,designation,experiance,expertise,password,role) VALUE($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)`,[name,email,number,institute,department,designation,experiance,expertise,password,role])
         res.json({
             success:true,
             message:"Data uploaded"
