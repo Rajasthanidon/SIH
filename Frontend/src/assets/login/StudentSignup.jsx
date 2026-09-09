@@ -306,7 +306,7 @@ function StudentSignup() {
 
                 {/* FORM */}
 
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSignup}>
 
                     {/* =================================
               PERSONAL INFORMATION
