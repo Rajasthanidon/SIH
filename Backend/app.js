@@ -14,6 +14,8 @@ app.use(cors({
     origin: ["https://academia-portal-five.vercel.app",
         "http://localhost:5500"
     ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
 }));
 const webroutes = require("./routes/routes")
