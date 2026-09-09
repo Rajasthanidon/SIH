@@ -59,6 +59,36 @@ function StudentSignup() {
 
         alert(`OTP sent to ${formData.mobile}`);
     };
+    const handleSignup = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/signup`, {
+
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+
+            const data = await response.json();
+
+            console.log("Login Response:", data);
+
+            if (data.ok) {
+                alert("Login successful!");
+        navigate("/StudentDashboard");
+            } else {
+                alert("Login failed!");
+            }
+
+        } catch (error) {
+            console.error("Error:", error);
+            alert("Server error!");
+        }
+    };
 
     return (
         <main
