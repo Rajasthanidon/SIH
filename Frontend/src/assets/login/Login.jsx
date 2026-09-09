@@ -22,32 +22,32 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // try {
-        //     const response = await fetch("/api/login", {
+        try {
+            const response = await fetch("/api/login", {
 
-        //         method: "POST",
-        //         headers: {
-        //             "Content-Type": "application/json",
-        //         },
-        //         body: JSON.stringify(formData),
-        //     });
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
 
 
-        //     const data = await response.json();
+            const data = await response.json();
 
-        //     console.log("Login Response:", data);
+            console.log("Login Response:", data);
 
-        //     if (response.ok) {
-        //         alert("Login successful!");
+            if (response.ok) {
+                alert("Login successful!");
         navigate("/StudentDashboard");
-        //     } else {
-        //         alert("Login failed!");
-        //     }
+            } else {
+                alert("Login failed!");
+            }
 
-        // } catch (error) {
-        //     console.error("Error:", error);
-        //     alert("Server error!");
-        // }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("Server error!");
+        }
     };
 
 
