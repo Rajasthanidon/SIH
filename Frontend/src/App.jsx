@@ -24,7 +24,7 @@ function App() {
             {/* Student Image */}
             <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-blue-700 overflow-hidden">
               <img
-                src="/student.png"
+                src="./asset/student.png"
                 alt="Student"
                 className="h-full w-full object-cover"
               />
@@ -57,7 +57,7 @@ function App() {
             {/* Student Image */}
             <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-blue-700 overflow-hidden">
               <img
-                src="/student.png"
+                src="./asset//student.png"
                 alt="Student"
                 className="h-full w-full object-cover"
               />
@@ -94,7 +94,7 @@ function App() {
             {/* Student Image */}
             <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-blue-700 overflow-hidden">
               <img
-                src="/student.png"
+                src="./asset//student.png"
                 alt="Student"
                 className="h-full w-full object-cover"
               />
@@ -127,7 +127,7 @@ function App() {
             {/* Student Image */}
             <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-blue-700 overflow-hidden">
               <img
-                src="/student.png"
+                src="./asset//student.png"
                 alt="Student"
                 className="h-full w-full object-cover"
               />
