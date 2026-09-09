@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://192.168.1.13:5500",
+        target: "https://sih-61sl.onrender.com",
         changeOrigin: true,
 
       }
