@@ -41,7 +41,7 @@ async function login(req,res){
 }
 function signup(req,res){
     const {name,email,number,institute,department,designation,experiance,expertise,password,role} = req.body
-    model.getuser(email,(err,row)=>{
+    model.get_user(email,(err,row)=>{
         
         if(row){res.json({
             succes:false,

@@ -1,7 +1,7 @@
 const pool = require("../database/connection");
-async function get_user(username,callback){
+async function get_user(email,callback){
     try{
-        const response = await pool.query(`SELECT * FROM users WHERE username = $1`,[username]); 
+        const response = await pool.query(`SELECT * FROM users WHERE email = $1`,[email]); 
         if(response.rows.length===0) return callback(null,null);
         const row = response.rows[0];
 
