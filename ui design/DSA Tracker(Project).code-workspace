@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../../DSA Tracker(Project)"
+		},
+		{
+			"path": "../../Coding"
+		},
+		{
+			"path": "../../C DSA Lab"
+		},
+		{
+			"path": "../../practice"
+		},
+		{
+			"path": "../../sign up page"
+		},
+		{
+			"path": "../../react"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SIH Project"
+	}
+}

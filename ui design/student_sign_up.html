@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Sign Up</title>
+</head>
+
+<body>
+    <main>
+
+        <section class="visual-panel">
+
+            <div class="brand">
+                <span class="brand-icon">📖</span>
+
+                <div>
+                    <h3>EduConnect</h3>
+                    <p>Collaborate. Innovate. Elevate.</p>
+                </div>
+            </div>
+
+            <div class="visual-content">
+                <h2>Create your student account <span>and shape your future</span></h2>
+                <p>
+                    Join a vibrant ecosystem of students,
+                    educators and industry leaders.
+                    Together, let’s build the future.
+                </p>
+            </div>
+
+            <div class="institution-illustration">
+                <img src="institution-illustration.png" alt="Educational Institution">
+            </div>
+
+            <div class="feature-list">
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <div>
+                        <h4>Connect with students</h4>
+                        <p>Build meaningful academic connections</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <div>
+                        <h4>Discover opportunities</h4>
+                        <p>Explore ideas, projects and opportunities</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <div>
+                        <h4>Secure & trusted</h4>
+                        <p>Your data is safe with us.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="form-panel">
+
+            <div class="form-header">
+                <div class="form-header-icon">🎓</div>
+
+                <div>
+                    <h1>Student Sign Up</h1>
+                    <p>Create your account</p>
+                </div>
+            </div>
+
+            <form action="submit">
+
+                <fieldset>
+
+                    <div class="section-header">
+                        <span class="legend-icon">👤</span>
+                        Personal Information
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">Email:</label>
+
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                <button type="button">Verify</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+                        <label for="mobile-number">Mobile Number:</label>
+
+                        <div class="form-group">
+                            <input type="tel" id="mobile-number" name="mobile-number"
+                                placeholder="Enter your mobile number" required>
+                            <button type="button">Verify</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <div class="section-header">
+                        <span class="legend-icon">🎓</span>
+                        Academic Information
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="institution">Institution:</label>
+                            <input type="text" id="institution" name="institution" placeholder="Enter your institution"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="degree">Degree:</label>
+                            <input type="text" id="degree" name="degree" placeholder="Enter your degree" required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="branch">Branch:</label>
+                            <input type="text" id="branch" name="branch" placeholder="Enter your branch" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="year">Year of Study:</label>
+                            <select name="year" id="year" required>
+                                <option value="" disabled selected>Select your year of study</option>
+                                <option value="1">1st Year</option>
+                                <option value="2">2nd Year</option>
+                                <option value="3">3rd Year</option>
+                                <option value="4">4th Year</option>
+                                <option value="5">5th Year</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="graduation-year">Graduation Year:</label>
+                            <select name="graduation-year" id="graduation-year" required>
+                                <option value="" disabled selected>Select your graduation year</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                                <option value="2031">2031</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="student-id">Student ID:</label>
+                            <input type="text" id="student-id" name="student-id" placeholder="Enter Roll No. / Reg. No."
+                                required>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <div class="section-header">
+                        <span class="legend-icon">🔐</span>
+                        Account Information
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password:</label>
+                            <input type="password" id="confirm-password" name="confirm-password"
+                                placeholder="Confirm your password" required>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <div class="terms-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">
+                        I agree to the
+                        <a href="terms.html" target="_blank">Terms and Conditions</a>
+                    </label>
+                </div>
+
+                <button type="submit">Create Account</button>
+
+                <p>
+                    Already have an account?
+                    <a href="login.html">Log in</a>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+</body>
+
+</html>

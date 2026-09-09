@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Skill Assessment</title>
+</head>
+
+<body>
+
+    <main class="assessment-page">
+
+        <button class="menu-button" type="button" aria-label="Open menu">
+            ☰
+        </button>
+
+        <header class="assessment-header">
+            <div class="header-icon">🎯</div>
+            <div>
+                <h1>Skill <span>Assessment</span></h1>
+                <p>Assess your skills and identify areas for improvement.</p>
+            </div>
+        </header>
+
+        <section class="assessment-container">
+
+            <div class="assessment-form">
+
+                <section class="assessment-section">
+                    <h2>
+                        <span class="section-icon">💻</span>
+                        Select Skill
+                    </h2>
+
+                    <label for="skill">Skill</label>
+                    <select id="skill" name="skill">
+                        <option value="" disabled selected>Select a skill</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                        <option value="cpp">C++</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </section>
+
+                <section class="assessment-section">
+                    <h2>
+                        <span class="section-icon">📚</span>
+                        Select Topics
+                    </h2>
+
+                    <div class="selection-list">
+                        <label>
+                            <input type="checkbox" name="topic" value="oop">
+                            OOP
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="topic" value="collections">
+                            Collections
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="topic" value="exception">
+                            Exception Handling
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="topic" value="multithreading">
+                            Multithreading
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="topic" value="file-handling">
+                            File Handling
+                        </label>
+                    </div>
+                </section>
+
+                <section class="assessment-section">
+                    <h2>
+                        <span class="section-icon">🔹</span>
+                        Select Subtopics
+                    </h2>
+
+                    <div class="selection-list">
+                        <label>
+                            <input type="checkbox" name="subtopic" value="classes-objects">
+                            Classes & Objects
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="subtopic" value="inheritance">
+                            Inheritance
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="subtopic" value="polymorphism">
+                            Polymorphism
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="subtopic" value="encapsulation">
+                            Encapsulation
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="subtopic" value="abstraction">
+                            Abstraction
+                        </label>
+                    </div>
+                </section>
+
+                <section class="assessment-section">
+                    <h2>
+                        <span class="section-icon">📊</span>
+                        Difficulty Level
+                    </h2>
+
+                    <div class="difficulty-options">
+
+                        <label>
+                            <input type="radio" name="difficulty" value="easy">
+                            Easy
+                        </label>
+
+                        <label>
+                            <input type="radio" name="difficulty" value="medium">
+                            Medium
+                        </label>
+
+                        <label>
+                            <input type="radio" name="difficulty" value="hard">
+                            Hard
+                        </label>
+
+                    </div>
+                </section>
+
+                <button type="button" class="start-button">
+                    Start Assessment
+                </button>
+
+            </div>
+
+            <aside class="assessment-summary">
+
+                <h2>Assessment Overview</h2>
+
+                <div class="summary-item">
+                    <span>Skill:</span>
+                    <strong>Java</strong>
+                </div>
+
+                <div class="summary-item">
+                    <span>Topics:</span>
+                    <strong>2</strong>
+                </div>
+
+                <div class="summary-item">
+                    <span>Subtopics:</span>
+                    <strong>4</strong>
+                </div>
+
+                <div class="summary-item">
+                    <span>Difficulty:</span>
+                    <strong>Medium</strong>
+                </div>
+
+                <div class="summary-item">
+                    <span>Questions:</span>
+                    <strong>10</strong>
+                </div>
+
+                <div class="summary-item">
+                    <span>Duration:</span>
+                    <strong>15 min</strong>
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

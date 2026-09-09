@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Institution Sign Up</title>
+</head>
+
+<body>
+
+    <main>
+
+        <section class="visual-panel">
+
+            <div class="brand">
+                <span class="brand-icon">📖</span>
+
+                <div>
+                    <h3>EduConnect</h3>
+                    <p>Collaborate. Innovate. Elevate.</p>
+                </div>
+            </div>
+
+            <div class="visual-content">
+
+                <h2>
+                    Create your<br>
+                    institution account<br>
+                    <span>and make an impact</span>
+                </h2>
+
+                <p>
+                    Join a vibrant ecosystem of educators,<br>
+                    innovators and industry leaders.<br>
+                    Together, let’s build the future.
+                </p>
+
+            </div>
+
+            <div class="institution-illustration">
+                <img src="institution-illustration.png" alt="Institution building illustration">
+            </div>
+
+            <div class="feature-list">
+
+                <div class="feature-card">
+                    <span class="feature-icon">👥</span>
+
+                    <div>
+                        <h4>Connect with industry</h4>
+                        <p>Build partnerships and real-world connections</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">💡</span>
+
+                    <div>
+                        <h4>Empower innovation</h4>
+                        <p>Encourage ideas and turn them into impact</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🛡️</span>
+
+                    <div>
+                        <h4>Secure & trusted</h4>
+                        <p>Your data is safe with us.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="form-panel">
+
+            <header class="form-header">
+                <div class="form-header-icon">🏛️</div>
+
+                <div>
+                    <h1>Institution Sign Up</h1>
+                    <p>Register your institution to get started</p>
+                </div>
+            </header>
+
+
+            <form action="submit">
+
+                <fieldset>
+
+                    <div class="section-header">
+                        <span class="legend-icon">🏛️</span>
+                        <span>Institution Information</span>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="institution-name">
+                                Institution Name:
+                            </label>
+
+                            <input type="text" id="institution-name" name="institution-name"
+                                placeholder="Enter your institution name" required>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="official-email">
+                                Official Institution Email:
+                            </label>
+
+                            <div class="form-group">
+
+                                <input type="email" id="official-email" name="official-email"
+                                    placeholder="Enter your official institution email" required>
+
+                                <button type="button">
+                                    Verify
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+
+                            <label for="contact-number">
+                                Contact Number:
+                            </label>
+
+                            <div class="form-group">
+
+                                <input type="tel" id="contact-number" name="contact-number"
+                                    placeholder="Enter institution's contact number" required>
+
+                                <button type="button">
+                                    Verify
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="institution-type">
+                                Institution Type:
+                            </label>
+
+                            <select name="institution-type" id="institution-type" required>
+
+                                <option value="" disabled selected>
+                                    Select institution type
+                                </option>
+
+                                <option value="university">
+                                    University
+                                </option>
+
+                                <option value="college">
+                                    College
+                                </option>
+
+                                <option value="school">
+                                    School
+                                </option>
+
+                                <option value="research">
+                                    Research Institution
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="website">
+                                Institution Website:
+                            </label>
+
+                            <input type="url" id="website" name="website" placeholder="Enter institution website"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="location">
+                                Location:
+                            </label>
+
+                            <input type="text" id="location" name="location" placeholder="Enter institution location"
+                                required>
+
+                            <!-- Later add country/state/city dropdown using JavaScript or map API -->
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <div class="section-header">
+                        <span class="legend-icon">👤</span>
+                        <span>Authorized Representative Information</span>
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="representative-name">
+                                Full Name:
+                            </label>
+
+                            <input type="text" id="representative-name" name="representative-name"
+                                placeholder="Enter your full name" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="designation">
+                                Designation:
+                            </label>
+
+                            <select name="designation" id="designation" required>
+
+                                <option value="" disabled selected>
+                                    Select your designation
+                                </option>
+
+                                <option value="principal">
+                                    Principal
+                                </option>
+
+                                <option value="director">
+                                    Director
+                                </option>
+
+                                <option value="vice-chancellor">
+                                    Vice-Chancellor
+                                </option>
+
+                                <option value="registrar">
+                                    Registrar
+                                </option>
+
+                                <option value="dean">
+                                    Dean
+                                </option>
+
+                                <option value="hod">
+                                    Head of Department (HOD)
+                                </option>
+
+                                <option value="tpo">
+                                    Training and Placement Officer (TPO)
+                                </option>
+
+                                <option value="placement-coordinator">
+                                    Placement Coordinator
+                                </option>
+
+                                <option value="administrative-officer">
+                                    Administrative Officer
+                                </option>
+
+                                <option value="technical-officer">
+                                    Technical Officer
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="representative-email">
+                                Representative Email:
+                            </label>
+
+                            <input type="email" id="representative-email" name="representative-email"
+                                placeholder="Enter your representative email" required>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <div class="section-header">
+                        <span class="legend-icon">🔒</span>
+                        <span>Account Information</span>
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="password">
+                                Password:
+                            </label>
+
+                            <input type="password" id="password" name="password" placeholder="Enter your password"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="confirm-password">
+                                Confirm Password:
+                            </label>
+
+                            <input type="password" id="confirm-password" name="confirm-password"
+                                placeholder="Confirm your password" required>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <div class="terms-group">
+
+                    <input type="checkbox" id="terms" name="terms" required>
+
+                    <label for="terms">
+                        I agree to the
+                        <a href="terms.html" target="_blank">Terms and Conditions</a>
+                    </label>
+
+                </div>
+
+                <!-- Create Account -->
+                <button type="submit">
+                    Create Account
+                </button>
+
+
+                <p>
+                    Already have an account?
+                    <a href="login.html">
+                        Log in
+                    </a>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
