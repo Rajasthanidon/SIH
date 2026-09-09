@@ -10,7 +10,12 @@ app.use(session({
     resave:false,
     saveUninitialized:false
 }))
-app.use(cors());
+app.use(cors({
+    origin: ["https://academia-portal-five.vercel.app",
+        "http://localhost:5500"
+    ],
+    credentials: true
+}));
 const webroutes = require("./routes/routes")
 app.set("view engine","ejs");
 app.use(express.urlencoded({extended:true}));
